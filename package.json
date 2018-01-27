@@ -1,0 +1,23 @@
+{
+  "name": "mongodb-query-change-type",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/hypercubex/mongodb-query-change-type",
+  "author": "Matthew Lam <matthewy28@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "jest": "^22.1.4",
+    "koa": "^2.4.1",
+    "koa-router": "^7.3.0",
+    "mongoose": "^5.0.1",
+    "require-directory": "^2.1.1"
+  }
+}
