@@ -20,6 +20,8 @@ exports.getStaffList = async sortByStaffNumber => {
         staffNumber: { $arrayElemAt: ['$staffNumberSplit', 1] }
       })
       .sort({ numberLength: 1, staffNumber: 1 })
+  } else {
+    pipeline.sort({ staffNumber: 1 })
   }
 
   const list = await pipeline.project({ _id: 1, staffNumber: 1 })
